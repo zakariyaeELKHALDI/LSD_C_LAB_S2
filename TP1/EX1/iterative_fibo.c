@@ -1,13 +1,16 @@
 #include "header.h"
 
 int iterative_fibo(int n)
-{
-    int F0 = 0, F1 = 1, F;
-    for (int i=2; i<=n; ++i)
+{   
+    int i=2;
+    while i<=n
     {
-        F= F1 + F0;
-        F0= F1;
-        F1= F;
+        int F0= 0, F1= 1, F= 0;
+            F= F1 + F0;
+            F0= F1;
+            F1= F;
+            i+=1;
+            iterative_fibo(i);
     }
     return F;
 }
