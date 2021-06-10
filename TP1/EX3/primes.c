@@ -27,5 +27,6 @@ void    get_primes(int n)
 			printf("%d\n",i);
 		++i;
 	}
+    return;	
 }
 
